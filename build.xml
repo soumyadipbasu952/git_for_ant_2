@@ -7,12 +7,14 @@
 <target name="Builds">
 
 <property name="Files" value="C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/AntJobtoContinuousImport_2"/>
-  <foreach target="execute" param="File">
+  <for target="execute" param="File">
+    <sequential>
     <fileset dir="${Files}" casesensitive="yes">
       <exclude name="**/*.iar"/> 
       <exclude name="**/*.properties"/> 
       
     </fileset>
+      </sequential>
   </foreach>
 </target>
 
