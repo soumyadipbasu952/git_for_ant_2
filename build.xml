@@ -8,22 +8,27 @@
 
 <property name="Files" value="C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/AntJobtoContinuousImport_2"/>
   <for param="File">
-    <sequential>
+    <path>
+    
     <fileset dir="${Files}" casesensitive="yes">
       <exclude name="**/*.iar"/> 
       <exclude name="**/*.properties"/> 
       
+      
     </fileset>
+      </path>
+    <sequential>
+    <ant antfile="${File}"/>
+    
       </sequential>
   </for>
 </target>
-
+<!--
 <target name="execute" >
   <ant antfile="${File}"/>
   
 </target>
-
-
+-->
 </project>
 
 
