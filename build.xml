@@ -7,7 +7,8 @@
 <target name="Builds">
 
 <property name="Files" value="C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/AntJobtoContinuousImport_2"/>
-  <for param="File">
+  <for list=${Files} param="File">
+    <!--
     <path>
     
     <fileset dir="${Files}" casesensitive="yes">
@@ -17,8 +18,9 @@
       
     </fileset>
       </path>
+-->
     <sequential>
-    <ant antfile="/bin/build.xml"/>
+    <ant antfile="${File}"/>
     
       </sequential>
   </for>
