@@ -9,7 +9,7 @@
 <property name="Files" value="C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/AntJobtoContinuousImport_2"/>
   <foreach target="execute" param="File">
     <fileset dir="${Files}" casesensitive="yes">
-     <!-- <include name="**/*.*"/> -->
+      <exclude name="**/*.iar"/> 
       
     </fileset>
   </foreach>
