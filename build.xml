@@ -16,7 +16,7 @@
 </target>
 
 <target name="execute" >
-  <ant antfile="../bin/build.xml"/>
+  <ant antfile="./bin/build.xml"/>
   
 </target>
 
