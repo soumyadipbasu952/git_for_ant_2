@@ -6,7 +6,7 @@
 
 <target name="Builds">
 
-<property name="Files" value="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport\bin\Projects"/>
+<property name="Files" value="C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/AntJobtoContinuousImport_2"/>
   <foreach target="execute">
     <fileset dir="${Files}" casesensitive="yes">
       <include name="**/*.*"/>
@@ -16,7 +16,7 @@
 </target>
 
 <target name="execute" >
-  <ant antfile="../buil.xml"/>
+  <ant antfile="../bin/build.xml"/>
   
 </target>
 
@@ -25,46 +25,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<project name="testing" default="Builds">
-
-<taskdef resource="net/sf/antcontrib/antlib.xml"/>
-  
-
-
-<target name="Builds">
-
-<property name="Files" value="C:\Windows\System32\config\systemprofile\AppData\Local\Jenkins\.jenkins\workspace\AntJobtoContinuousImport\bin\Projects"/>
-  <foreach target="execute" param="theFile">
-    <fileset dir="${Files}" casesensitive="yes">
-      <include name="**/*.*"/>
-      
-    </fileset>
-  </foreach>
-</target>
-
-<target name="execute" >
-  <ant antfile="${theFile}"/>
-  
-</target>
-
-
-</project>
