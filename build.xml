@@ -10,6 +10,7 @@
   <foreach target="execute" param="File">
     <fileset dir="${Files}" casesensitive="yes">
       <exclude name="**/*.iar"/> 
+      <exclude name="**/*.properties"/> 
       
     </fileset>
   </foreach>
