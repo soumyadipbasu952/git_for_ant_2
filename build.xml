@@ -7,7 +7,7 @@
 <target name="Builds">
 
 <property name="Files" value="C:/Windows/System32/config/systemprofile/AppData/Local/Jenkins/.jenkins/workspace/AntJobtoContinuousImport_2"/>
-  <for target="execute" param="File">
+  <for param="File">
     <sequential>
     <fileset dir="${Files}" casesensitive="yes">
       <exclude name="**/*.iar"/> 
