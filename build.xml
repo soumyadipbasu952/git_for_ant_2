@@ -12,7 +12,7 @@
     <path>
     
     <dirset dir="${Files}" casesensitive="yes">
-     <!-- <include name="**/*.xml"/> -->
+      <include name="**/*.xml"/> 
     <!--  <exclude name="**/*.properties"/> -->
       
        </dirset>
