@@ -11,18 +11,19 @@
     
     <path>
     
-    <dirset dir="${Files}" casesensitive="yes">
-      <includesfile name="build.xml"/> 
+    <fileset dir="${Files}" casesensitive="yes">
+      <include name="**/*.xml"/>
        
     <!--  <exclude name="**/*.properties"/> -->
       
-       </dirset>
+       </fileset>
       </path>
     <sequential>
     <ant antfile="@{File}"/>
     
       </sequential>
   </for>
+  <echo>${File}/>
 </target>
 <!--
 <target name="execute" >
