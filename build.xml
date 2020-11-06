@@ -12,8 +12,8 @@
     <path>
     
     <dirset dir="${Files}" casesensitive="yes">
-      <includesfile name="OIC_Project_1"/> 
-      <includesfile name="OIC_Project_2"/> 
+      <includesfile name="build.xml"/> 
+       
     <!--  <exclude name="**/*.properties"/> -->
       
        </dirset>
