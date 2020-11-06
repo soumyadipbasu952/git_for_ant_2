@@ -11,11 +11,11 @@
     
     <path>
     
-    <fileset dir="${Files}" casesensitive="yes">
-      <include name="**/*.xml"/> 
+    <dirset dir="${Files}" casesensitive="yes">
+     <!-- <include name="**/*.xml"/> -->
     <!--  <exclude name="**/*.properties"/> -->
       
-       </fileset>
+       </dirset>
       </path>
     <sequential>
     <ant antfile="@{File}"/>
